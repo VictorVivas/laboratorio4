@@ -1,0 +1,25 @@
+.foto-perfil{
+    margin: 2px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+header{
+    background-color: cornflowerblue;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+nav{
+    background-color: lightskyblue;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+section{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+}
