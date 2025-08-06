@@ -9,7 +9,7 @@
 }
 
 header{
-    background-color: cornflowerblue;
+    background: linear-gradient(cornflowerblue, rgb(218, 237, 245));
     border: 2px solid grey;
     border-radius: 5px;
     text-align: center;
