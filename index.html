@@ -18,13 +18,22 @@
     <hr>
     <nav>
         <h2>Índice</h2>
-        <ul>
+        <ul id="nav-list" class="nav-list">
             <li><a href="#acerca">Acerca de mi</a></li>
             <li><a href="#experiencia">Expericiencia Laboral</a></li>
-            <li><a href="#estudios">Estudios</a></li>
+            <li class="subEstudios">
+                <a href="#estudios">Estudios</a>
+                <ul>
+                    <li><a href="#estudios">Profesional</a></li>
+                    <li><a href="#estudios">Tecnológico</a></li>
+                    <li><a href="#estudios">Idiomas</a></li>
+                </ul>
+            </li>
             <li><a href="#referencia">Referencias Personal</a></li>
             <li><a href="#formulario">Formulario</a></li>
+            
         </ul>
+        <div class="hamburger" id="hamburger">☰</div>
     </nav>
 
     <section id="acerca">
@@ -42,16 +51,16 @@
 
     <section id="experiencia">
         <h2>Experiencia Laboral</h2>
-        
-        <p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Diebold_Nixdorf_Holding_Germany_logo.svg/250px-Diebold_Nixdorf_Holding_Germany_logo.svg.png" alt="imagenLaboral" width="20%" height="20%">
+        <article>
+        <div class="caja">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Diebold_Nixdorf_Holding_Germany_logo.svg/250px-Diebold_Nixdorf_Holding_Germany_logo.svg.png" alt="imagenLaboral" width="50px" height="50px">
             <br>
-            <a href="https://www.dieboldnixdorf.com/en">Diebold Nixdorf</a>. 
-            <br>
-            Representante de Servicio al Cliente segunda linea.
-        </p>
+            <a href="https://www.dieboldnixdorf.com/en">Diebold Nixdorf</a>
+            <p>Representante de Servicio al Cliente segunda linea.</p>
+        </div>
 
-        <p>Funciones:</p>
+        <div class="caja">
+            <h3>Funciones:</h3>
             <ol>
                 <li>Instalación y configuración de cajeros automaticos</li>
                 <li>Mantenimiento y reparación electrónica de cajeros automaticos</li>
@@ -59,49 +68,67 @@
                 <li>Instalación y configuración de sistemas operativos en cajeros automaticos</li>
 
             </ol>
+        </div>
+        </article>
     </section>
 
     <section id="estudios">
         <h2>Estudios</h2>
-        <p>
-            <img src="https://campusvirtual.usanjose.co/campus/pluginfile.php/1/theme_moove/logo/1722427286/LOGO-usanjose%20%282%29.png" alt="imagenUniversidad" width="20%" height="20%">
-            <br>
-            <ul>
-                <li>Ingeniero de sistemas - 2024</li>
-                <li>Diplomado en Big Data - 2024</li>
-            </ul>
+        <article>
+            <div class="caja">
+                <img src="data:image/png;base64,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" alt="logoSanJose" width="50px" height="50px">
+                <br>
+                <a href="https://sitio.usanjose.edu.co/">FES San José</a>
+            </div>
 
-        </p>
-    
-        <p>
-            <img src="https://www.univalle.edu.co/images/logos/logo-univalle-80-anhos-horizontal.png" alt="Univalle" width="50%" height="50%">
-            <br>
-            <ul>
-                <li>Tecnólogo en electrónica - 2022</li>
-            </ul>
+            <div class="caja">
+                <h3>Título</h3>
+                <ul>
+                    <li>Ingeniero de sistemas - 2024</li>
+                    <li>Diplomado en Big Data - 2024</li>
+                </ul>
+            </div>
+        </article>  
 
-        </p>
+        <article>
+            <div class="caja">
+                <img src="https://www.univalle.edu.co/images/Univalle/70_Rojo.jpg" alt="logoUnivalle" width="50px" height="50px">
+                <br>
+                <a href="https://www.univalle.edu.co/">Universidad del Valle</a>
+            </div>
 
-        <h2>Idiomas</h2>
-        <table border="1" cellpadding = "2" cellspacing = "2">
-            <tr>
-                
-                <th>Idioma</th>
-                <th>Nivel</th>
-                
-            </tr>
-            <tr>
-                
-                <td>ingles</td>
-                <td>B1</td>
-            </tr>
-            <tr>
-                
-                <td>Español</td>
-                <td>Nativo</td>
-            </tr>
+            <div class="caja">
+                <h3>Título</h3>
+                <ul>
+                    <li>Tecnólogo en electrónica - 2022</li>
+                </ul>
+            </div>
+        </article>
 
-        </table>
+        <article>
+            <div class="caja">
+                <h2>Idiomas</h2>
+                <table>
+                    <tr>
+                        
+                        <th>Idioma</th>
+                        <th>Nivel</th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td>Inglés</td>
+                        <td>B1</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>Español</td>
+                        <td>Nativo</td>
+                    </tr>
+
+                </table>
+            </div>
+        </article>
     </section>
     
     <section id="referencia">
@@ -114,21 +141,25 @@
 
     <section id="formulario">
         <h2>Formulario</h2>
-        <form action="">
-            <label for="">Nombre:</label><br>
-            <input type="text" name="nombre" required="" placeholder="Escriba su nombre"><br>
-            <label for="">Apellido:</label><br>
-            <input type="text" name="apellido" required="" placeholder="Escriba su apellido"><br>
-            <label for="">Mensaje:</label><br>
-            <textarea name="mensaje" id="mensaje"></textarea><br>
-            <input type="button" value="Enviar"><br>
+        <div class="formContainer">
+            <form action="">
+                <label for="">Nombre:</label><br>
+                <input type="text" name="nombre" required="" placeholder="Escriba su nombre"><br>
+                <label for="">Apellido:</label><br>
+                <input type="text" name="apellido" required="" placeholder="Escriba su apellido"><br>
+                <label for="">Mensaje:</label><br>
+                <textarea name="mensaje" id="mensaje"></textarea><br>
+                <input type="button" value="Enviar"><br>
 
-        </form>
+            </form>
+        </div>
     </section>
 
     <footer>
         <p>© 2025 mi Hoja de Vida</p>
     </footer>
+
+    <script src="script14.js"></script>
 
 </body>
 </html>
