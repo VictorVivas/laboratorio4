@@ -21,18 +21,23 @@ h2{
 }
 
 nav{
+    position: sticky;
+    top: 0;
     background-color: rgb(218, 237, 245);
     border: 2px solid grey;
     border-radius: 5px;
-    margin: 5px;
+    margin: 0px;
+    z-index: 1000;
 }
+
 
 nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
     background-color: #314258;
+    gap: 1rem;
 }
 
 nav li{
@@ -51,11 +56,84 @@ nav li a:hover{
     background-color: #111;
 }
 
+  /* Submenú */
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    background-color: #111;
+    min-width: 150px;
+ }
+
+nav li:hover ul {
+    display: inline-block;
+    
+}
+
+nav li ul li a {
+    color: #fff;
+}
+
+nav li ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+    /* Submenú flecha visual */
+nav ul .subEstudios:hover > a::after{
+    content: ' ▼';
+    font-size: 0.7rem;
+}
+
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+/*resposive para moviles*/
+
+@media (max-width: 768px) {
+    .hamburger {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+    .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #314258;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-list.active{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    background-color: #314258;
+    min-width: 150px;
+  }
+
+  .subEstudios{
+    display: block;
+    position: relative;
+  }
+
+}
+
 section{
     background-color: rgb(218, 237, 245);
     border: 2px solid grey;
     border-radius: 5px;
     margin: 5px;
+    scroll-margin-top: 150px;
 }
 
 #acerca{
@@ -113,4 +191,3 @@ footer{
     margin: 5px;
     text-align: center;
 }
-

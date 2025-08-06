@@ -18,13 +18,22 @@
     <hr>
     <nav>
         <h2>Índice</h2>
-        <ul>
+        <ul id="nav-list" class="nav-list">
             <li><a href="#acerca">Acerca de mi</a></li>
             <li><a href="#experiencia">Expericiencia Laboral</a></li>
-            <li><a href="#estudios">Estudios</a></li>
+            <li class="subEstudios">
+                <a href="#estudios">Estudios</a>
+                <ul>
+                    <li><a href="#estudios">Profesional</a></li>
+                    <li><a href="#estudios">Tecnológico</a></li>
+                    <li><a href="#estudios">Idiomas</a></li>
+                </ul>
+            </li>
             <li><a href="#referencia">Referencias Personal</a></li>
             <li><a href="#formulario">Formulario</a></li>
+            
         </ul>
+        <div class="hamburger" id="hamburger">☰</div>
     </nav>
 
     <section id="acerca">
@@ -149,6 +158,8 @@
     <footer>
         <p>© 2025 mi Hoja de Vida</p>
     </footer>
+
+    <script src="script14.js"></script>
 
 </body>
 </html>
