@@ -60,6 +60,49 @@ section{
 
 #acerca{
     text-align: justify;
+    padding: 20px;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja{
+    flex: 1; /* Para que ambos div ocupen el mismo espacio */
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.caja ul,ol{
+    text-align: left;
+}
+
+table, td, th {
+    border: 1px solid white;
+}
+
+.caja table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.caja table td{
+    width: 300px;
+}
+
+.caja table th{
+    background-color: cornflowerblue;
+}
+
+.formContainer form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
 footer{
@@ -70,3 +113,4 @@ footer{
     margin: 5px;
     text-align: center;
 }
+
