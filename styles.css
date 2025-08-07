@@ -3,6 +3,7 @@
     border: 2px solid grey;
     border-radius: 5px;
     width: 200px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
 }
 
 *{
@@ -177,11 +178,62 @@ table, td, th {
     background-color: cornflowerblue;
 }
 
-.formContainer form{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+#formSection{
+    background-color: #ffffff;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del formulario */
+.formContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer label {
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.formContainer input,
+.formContainer textarea {
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.formContainer input:focus,
+.formContainer textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.formContainer textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botón */
+.formContainer button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formContainer button:hover {
+    background-color: #2980b9;
 }
 
 footer{
