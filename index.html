@@ -30,7 +30,7 @@
                 </ul>
             </li>
             <li><a href="#referencia">Referencias Personal</a></li>
-            <li><a href="#formulario">Formulario</a></li>
+            <li><a href="#formulario">Contacto</a></li>
             
         </ul>
         <div class="hamburger" id="hamburger">☰</div>
@@ -140,22 +140,28 @@
     </section>
 
     <section id="formulario">
-        <h2>Formulario</h2>
+        <h2>Contacto</h2>
         <div class="formContainer">
-            <form action="">
-                <label for="">Nombre:</label><br>
-                <input type="text" name="nombre" required="" placeholder="Escriba su nombre"><br>
-                <label for="">Apellido:</label><br>
-                <input type="text" name="apellido" required="" placeholder="Escriba su apellido"><br>
-                <label for="">Mensaje:</label><br>
-                <textarea name="mensaje" id="mensaje"></textarea><br>
-                <input type="button" value="Enviar"><br>
+            <form id="contactForm">
+                <label >Nombre Completo:</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"><br>
+
+                <label >Correo electrónico:</label><br>
+                <input type="email" name="email" id="email" placeholder="Escriba su email"><br>
+
+                <label >Motivo de Contacto:</label><br>
+                <textarea name="mensaje" id="mensaje" placeholder="Escriba el motivo de su mensaje"></textarea><br>
+
+                <button onclick="validarFormulario()">enviar</button>
+                
 
             </form>
         </div>
     </section>
 
     <footer>
+        <a href="https://www.instagram.com/camilo_869/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/victor-camilo-vivas/" target="_blank">Linkedin</a>
         <p>© 2025 mi Hoja de Vida</p>
     </footer>
 
