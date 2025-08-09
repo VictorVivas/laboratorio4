@@ -246,11 +246,18 @@ footer{
 }
 
 footer a{
-    display: inline-block;
+    display: block;
     color: #fff;
     margin: 5px;
     padding: 10px;
 }
 footer a:hover{
     color: aqua;
+}
+
+.datosContacto{
+    display: inline-flex;
+}
+.datosContacto p{
+    margin: 0 10px;
 }
